@@ -218,7 +218,12 @@ h3 {
   font-size: 18px;
   width: 200px;
   height: 50px;
-  
+}
+
+.contact button:hover {
+  cursor: pointer;
+  transition: all ease 0.3s;
+  transform: scale(1.1) translateY(-5px);
 }
 
 @media screen and (max-width: 767px) {
@@ -343,7 +348,7 @@ h3 {
 
 .model-content {
   background-color: rgb(65, 64, 154);
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   width: 80%;
 }
@@ -401,6 +406,11 @@ form .user-details .input-box {
   transition: all 0.3s ease;
 }
 
+.user-details .input-box textarea {
+  width: 100%;
+  height: 100px;
+}
+
 form .button {
   height:  45px;
   margin: 45px 0;
@@ -416,7 +426,13 @@ form .button input {
   font-weight: 600;
   letter-spacing: 1px;
   background-color: rgb(247, 199, 6);
-} 
+}
+
+form .button input:hover {
+  cursor: pointer;
+  transition: all ease 0.3s;
+  transform: scale(1.1) translateY(-5px);
+}
 
 @media screen and (max-width: 767px) {
   .modal-body {

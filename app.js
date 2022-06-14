@@ -78,6 +78,7 @@ form.addEventListener('submit', (e) => {
     email: x['email'].value,
     telephone: x['telephone'].value,
     sujet: x['sujet'].value,
+    message: x['message'].value.trim(),
   }
   console.log('User details: ', userDetails)
   alert('Form validated and console logged successfuly')
