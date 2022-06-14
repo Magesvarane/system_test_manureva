@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Font -- Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="assets/logo.png" alt="Logo"></a>
+      <div id="navLinks" class="nav-links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">A propos</a></li>
+          <li><a href="">Formation</a></li>
+          <li><a href="">Securite</a></li>
+          <li><a href="">Actualites</a></li>
+          <li><a href="">Postuler</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="tagline">
+      <img src="assets/logo.png" alt="Salesforce Logo">
+      <div class="text">Vous aidez a grandir est notre plus belle reussite.</div>
+    </div>
+  </section>
+
+  <!-- Notre accompagnement Section -->
+  <section class="accompagnement">
+    <div class="accompagnement-header">
+      <h1>Notre accompagnement</h1>
+      <p>Nos differentes expertises nous permettent de vous accompagner dans votre croissance par le biai de differents axes : </p>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <img width="251" height="176" src="assets/salesforce.png" alt="">
+        <h3>Salesforce</h3>
+        <p>Nous vous accompagnos dans votre independance.</p>
+      </div>
+
+      <div class="col">
+        <img width="167" height="180" src="assets/digital.png" alt="">
+        <h3>Transformation Digitale</h3>
+        <p>Vous accompagnez vers les enjeux de demain.</p>
+      </div>
+
+      <div class="col">
+        <img width="140" height="180" src="assets/security.png" alt="">
+        <h3>Securite</h3>
+        <p>Reprenez ke controle de votre SI.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section class="contact">
+      <p>Prets pour votre transformation</p>
+      <button id="contact-btn">Contactez-nous</button>
+
+      <div id="contact-modal" class="modal">
+        <div class="model-content">
+          <div class="modal-header">
+            <i class="fa fa-times close"></i>
+          </div>
+
+          <div class="modal-body">
+            <form id="form" class="form">
+              <div class="user-details">
+                <div class="input-box">
+                  <span class="details">Nom</span>
+                  <input type="text" name="nom" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Prenom</span>
+                  <input type="text" name="prenom" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Societe</span>
+                  <input type="text" name="societe" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Email</span>
+                  <input type="email" name="email" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Telephone</span>
+                  <input type="text" name="telephone" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Sujet</span>
+                  <input type="text" name="sujet" required>
+                </div>
+                
+                <div class="button">
+                  <input type="submit" value="Envoyez">
+                </div>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+
+  <!-- Logo Carousel Section -->
+  <section class="logo">
+    <h1>Plus de 100 entrprises nous font confiance</h1>
+    <div class="logo-carousel">
+      <div class="item"><a href="#"><img src="assets/logo_1.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_2.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_3.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_4.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_5.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_6.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_7.png" alt=""></a></div>
+      <div class="item"><a href="#"><img src="assets/logo_8.png" alt=""></a></div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer">
+    <div class="address">
+      <p class="address-header">Adresse</p>
+      <p>SPACES, Cours Valmy 1-7, 92800 La Defense</p>
+    </div>
+    <div>
+      <p>Certifie Organisme de Formation n 1192231952</p>
+    </div>
+    <div >
+      <p>Certifie DataDock (loi du 5 mars 2014)</p>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2020 Reej Consulting</p>
+      <p>Design by Magesvarane</p>
+      <p>Mentions legales</p>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
